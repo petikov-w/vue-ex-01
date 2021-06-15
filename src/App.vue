@@ -45,6 +45,7 @@ export default {
     justify-content: space-between;
     align-items: center;
     border-top: 2px solid $border-color;
+    padding-top: 10px;
   }
   .content {
     min-height: 78vh;

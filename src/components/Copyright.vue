@@ -1,6 +1,6 @@
 <template>
     <div class="root">
-      <a :href="link"><span>{{getTitle}}</span></a>
+      <a :href="link">{{getTitle}}</a>
     </div>
 </template>
 
@@ -22,10 +22,14 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "../assets/scss/variables";
-    span {
+    a {
       font-family: sans-serif;
       font-size: 14px;
       font-weight: 600;
       color: $copyright-color;
+      text-decoration: none;
+      &:hover {
+          color: $border-color;
+      }
     }
 </style>
