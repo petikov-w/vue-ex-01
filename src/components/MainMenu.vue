@@ -4,19 +4,18 @@
           <li class="list-item" v-for="(title, index) in titles" :key="index" @click="getItem(title)"> {{getTitle(title)}} </li>
         </ul>
     </div>
+
 </template>
 
 <script>
 export default {
-  name: 'LinkList',
+  name: 'MainMenu',
   data() {
     return {
-       titles: [{title: 'Первый'},
-                {title: 'Второй'},
-                {title: 'Третий'},
-                {title: 'Четвертый'},
-                {title: 'Десятый'},
-                {title: 'Шестой'}]
+       titles: [{title: 'Главная'},
+                {title: 'Каталог'},
+                {title: 'О нас'},
+                {title: 'Контакты'}]
     }
   },
   methods: {
@@ -29,12 +28,12 @@ export default {
   }
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
   @import "../assets/scss/variables";
   .list {
     display: flex;
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     color: $main-color-list-item;
     list-style: none;
