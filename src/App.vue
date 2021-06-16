@@ -6,7 +6,7 @@
         <MainMenu></MainMenu>
       </div>
       <div class="content">
-
+          <ListThemes></ListThemes>
       </div>
       <div class="footer">
         <img id="logo-footer" src="./assets/image/logo.png" alt="">
@@ -19,12 +19,14 @@
 <script>
 import MainMenu from './components/MainMenu.vue'
 import Copyright from './components/Copyright.vue'
+import ListThemes from './components/ListThemes.vue'
 
 export default {
   name: 'App',
   components: {
     MainMenu,
-    Copyright
+    Copyright,
+    ListThemes
   }
 }
 </script>
